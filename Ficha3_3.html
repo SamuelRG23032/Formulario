@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Formulario HTML
+        </title>
+    </head>
+    <body>
+        <form action="Formulario.php" method="post">
+        <fieldset>
+            <legend>Dados de Contacto</legend>
+                <table cellspacing="10">
+                    <tr>
+                        <td>
+                            <label for="nome">Nome: </label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="fname" placeholder="Primeiro nome" pattern="[A-Za-z]{3,}">
+                        </td>
+                        <td>
+                            <label for="sobrenome">Sobrenome: </label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="lname" placeholder="Ultimo nome" pattern="[A-Za-z]{3,}">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Nascimento: </label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="dia" size="2" maxlength="2" placeholder="dd">
+                            <input type="text" name="mes" size="2" maxlength="2" placeholder="mm">
+                            <input type="text" name="ano" size="4" maxlength="4" placeholder="aaaa">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Email: </label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="mail" placeholder="email@empresa.pt">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Motivo do contacto: </label>
+                        </td>
+                        <td align="left">
+                            <select name="motivo" id="motivo">
+                                <option value="sugestao">Sugestao</option>
+                                <option value="critca">Critica</option>
+                                <option value="informacao">Informaçao</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Mensagem: </label>
+                        </td>
+                        <td>
+                            <textarea id="mensagem" name="mensagem" rows="10" cols="10"></textarea>
+                        </td>
+                    </tr>
+                </table>
+                    <tr>
+                        <input type="submit">
+                        <input type="reset">
+                    </tr>
+        </fieldset>
+        </form>
+    </body>
+</html>
